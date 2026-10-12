@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Siddartha</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #141e30, #243b55);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 750px;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 20px;
+            padding: 40px;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        h1 {
+            font-size: 42px;
+            color: #ffd369;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            font-size: 18px;
+            color: #eeeeee;
+            margin-bottom: 25px;
+        }
+
+        .profile {
+            font-size: 70px;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            color: #ffd369;
+            margin: 25px 0 15px;
+        }
+
+        .about {
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.12);
+            padding: 20px 10px;
+            border-radius: 12px;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            background: rgba(255, 211, 105, 0.2);
+        }
+
+        .card .emoji {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        .card h3 {
+            color: #ffd369;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            font-size: 15px;
+        }
+
+        footer {
+            margin-top: 30px;
+            color: #cccccc;
+            font-size: 14px;
+        }
+
+        @media (max-width: 500px) {
+            .container {
+                padding: 25px 18px;
+            }
+
+            h1 {
+                font-size: 32px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="profile">👨‍💻</div>
+
+        <h1>Hi, I'm Siddartha!</h1>
+
+        <p class="subtitle">
+            Computer Science Engineering Student
+        </p>
+
+        <h2>About Me</h2>
+
+        <p class="about">
+            Hello! My name is Siddartha. I am a second-year
+            Computer Science Engineering student studying in
+            Davangere. I enjoy learning new things and exploring
+            the world of technology.
+        </p>
+
+        <h2>My Favorites</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="emoji">🎓</div>
+                <h3>My Education</h3>
+                <p>2nd Year CSE</p>
+                <p>Davangere, Karnataka</p>
+            </div>
+
+            <div class="card">
+                <div class="emoji">🥞</div>
+                <h3>Favorite Food</h3>
+                <p>Dosa</p>
+            </div>
+
+            <div class="card">
+                <div class="emoji">🦁</div>
+                <h3>Favorite Animal</h3>
+                <p>Lion</p>
+            </div>
+
+            <div class="card">
+                <div class="emoji">🏏</div>
+                <h3>Favorite Cricketer</h3>
+                <p>Virat Kohli</p>
+            </div>
+
+        </div>
+
+        <footer>
+            <p>Made with ❤️ by Siddartha</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
